@@ -1,0 +1,33 @@
+.container {
+    width: 800px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0 auto;
+    font-size: 0; 
+}
+.header {
+    background-color: #00b9f2;
+    min-height: 150px;
+    line-height: 50px;
+}
+.title {
+    text-align: center;
+}
+.photo {
+    background-color: #222;
+    min-height: 200px;
+    text-align: center;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.contents {
+    background-color: #eee;
+    min-height: 150px;
+}
+.footer {
+    background-color: #ddd;
+    min-height: 150px;
+}
