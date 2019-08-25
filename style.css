@@ -1,13 +1,13 @@
 .container {
-    width: 800px;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    padding-left: 15%;
+    padding-right: 15%;
     margin: 0 auto;
-    font-size: 0; 
 }
 .header {
     background-color: #00b9f2;
-    min-height: 150px;
+    min-height: 50px;
     line-height: 50px;
 }
 .title {
@@ -17,17 +17,48 @@
     background-color: #222;
     min-height: 200px;
     text-align: center;
+    opacity: 0.9;
 }
-h1 {
+.box {
+    box-sizing: border-box;
+    width: 31%;
+    border-radius: 15px;
+    min-height: 200px;
+    min-width: 180px;
+    background-size: cover;
+    margin: 1%;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 5px #999;
+}
+.box p {
+    color: black;
+}
+.box:hover {
+    background-color: #efefef;
+}
+h1, p {
     padding: 0;
     margin: 0;
-    font-size: 20px;
 }
 .contents {
-    background-color: #eee;
-    min-height: 150px;
+    min-height: 200px;
+    text-align: center;
+    overflow: auto;
 }
 .footer {
     background-color: #ddd;
-    min-height: 150px;
+    min-height: 50px;
+}
+
+@media screen and (min-width: 401px) {
+    h1, p {
+      font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    h1, p {
+      font-size: 12px;
+    }
 }
