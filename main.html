@@ -23,44 +23,172 @@
             </div>
         </div>
         <div class="contents">
-            <div class="box" id="box1" onclick="showModal()">
+            <div class="box" id="box1">
                 <div class="overlay"></div>
                 <p>Personal Data</p>
             </div>
-            <div class="box" id="box2" onclick="showModal()">
+            <div class="box" id="box2">
                 <div class="overlay"></div>
                 <p>Education</p>
             </div>
-            <div class="box" id="box3" onclick="showModal()">
+            <div class="box" id="box3">
                 <div class="overlay"></div>
                 <p>Contacts</p>
             </div>
-            <div class="box" id="box4" onclick="showModal()">
+            <div class="box" id="box4">
                 <div class="overlay"></div>
                 <p>Achievements</p>
             </div>
-            <div class="box" id="box5" onclick="showModal()">
+            <div class="box" id="box5">
                 <div class="overlay"></div>
                 <p>Experiences</p>
             </div>
-            <div class="box" id="box6" onclick="showModal()">
+            <div class="box" id="box6">
                 <div class="overlay"></div>
                 <p>Skills</p>
             </div>
             <div class="modal" id="modalku">
-                <div class="modal-content">
-                    <p id="text-modal">Kuntal</p>
+                <div class="modal-content" id="content1">
+                    <div class="modal-title">
+                        <p>Personal Data</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Name - Ahmad Muammar Fanani</p>
+                        <p>Birth Date - 14th November 1997</p>
+                        <p>Address - Jambangan, Surabaya</p>
+                    </div>
+                </div> 
+                <div class="modal-content" id="content2">
+                    <div class="modal-title">
+                        <p>Education</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>2013 - 2016 | MA Pesantren Al-Amin</p>
+                        <p>2016 - Now  | Telkom University</p>
+                    </div>
+                </div>
+                <div class="modal-content" id="content3">
+                    <div class="modal-title">
+                        <p>Contacts</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Github - Muammarbanana</p>
+                        <p>Email - muammarfanani2@gmail.com</p>
+                        <p>Phone - 0895336581174</p>
+                    </div>
+                </div>
+                <div class="modal-content" id="content4">
+                    <div class="modal-title">
+                        <p>Achievements</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Member of Mobile Innovation Laboratory</p>
+                        <p>Participant at Arkavidia Competitive Programming Competition</p>
+                    </div>
+                </div>
+                <div class="modal-content" id="content5">
+                    <div class="modal-title">
+                        <p>Experiences</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mobile App Developer at Heartenly.com</p>
+                        <p>Learn "Membuat Aplikasi Android untuk Pemula" at Dicoding</p>
+                        <p>Learn "Belajar Membangun LINE Chatbot" at Dicoding</p>
+                        <p>Learn "Belajar Menjadi AWS Solutions Architect Associate" at Dicoding</p>
+                        <p>Learn "Memulai Pemrograman Dengan Kotlin" at Dicoding</p>
+                    </div>
+                </div>
+                <div class="modal-content" id="content6">
+                    <div class="modal-title">
+                        <p>Skills</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Android development with Java, Flutter, and Kotlin</p>
+                        <p>Web development with HTML, CSS, and PHP</p>
+                        <p>Competitive programming with Python</p>
+                        <p>LINE Chatbot with PHP</p>
+                    </div>
                 </div>
             </div>
             <script>
                 var modal = document.getElementById("modalku");
-        
-                function showModal(){
+                var content1 = document.getElementById("content1");
+                var content2 = document.getElementById("content2");
+                var content3 = document.getElementById("content3");
+                var content4 = document.getElementById("content4");
+                var content5 = document.getElementById("content5");
+                var content6 = document.getElementById("content6");
+                var btn1 = document.getElementById("box1");
+                var btn2 = document.getElementById("box2");
+                var btn3 = document.getElementById("box3");
+                var btn4 = document.getElementById("box4");
+                var btn5 = document.getElementById("box5");
+                var btn6 = document.getElementById("box6");
+
+                btn1.onclick = function() {
                     modal.style.display = "block";
+                    content1.style.display = "block";
+                    content2.style.display = "none";
+                    content3.style.display = "none";
+                    content4.style.display = "none";
+                    content5.style.display = "none";
+                    content6.style.display = "none";
+                }
+
+                btn2.onclick = function() {
+                    modal.style.display = "block";
+                    content1.style.display = "none";
+                    content2.style.display = "block";
+                    content3.style.display = "none";
+                    content4.style.display = "none";
+                    content5.style.display = "none";
+                    content6.style.display = "none";
+                }
+
+                btn3.onclick = function() {
+                    modal.style.display = "block";
+                    content1.style.display = "none";
+                    content2.style.display = "none";
+                    content3.style.display = "block";
+                    content4.style.display = "none";
+                    content5.style.display = "none";
+                    content6.style.display = "none";
+                }
+
+                btn4.onclick = function() {
+                    modal.style.display = "block";
+                    content1.style.display = "none";
+                    content2.style.display = "none";
+                    content3.style.display = "none";
+                    content4.style.display = "block";
+                    content5.style.display = "none";
+                    content6.style.display = "none";
+                }
+
+                btn5.onclick = function() {
+                    modal.style.display = "block";
+                    content1.style.display = "none";
+                    content2.style.display = "none";
+                    content3.style.display = "none";
+                    content4.style.display = "none";
+                    content5.style.display = "block";
+                    content6.style.display = "none";
+                }
+
+                btn6.onclick = function() {
+                    modal.style.display = "block";
+                    content1.style.display = "none";
+                    content2.style.display = "none";
+                    content3.style.display = "none";
+                    content4.style.display = "none";
+                    content5.style.display = "none";
+                    content6.style.display = "block";
                 }
 
                 window.onclick = function(event) {
                     if (event.target == modal) {
+                        modal.style.display = "none";
+                    }else if(event.target == content1) {
                         modal.style.display = "none";
                     }
                 }
